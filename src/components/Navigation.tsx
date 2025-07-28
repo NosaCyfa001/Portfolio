@@ -17,11 +17,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const navItems = [['Home', 'home'], ['About', 'about'], ['Projects', 'projects'], ['Contact', 'contact']];
 
-function Navigation({parentToChild, modeChange}: any) {
+function Navigation({ parentToChild, modeChange }: any) {
 
-  const {mode} = parentToChild;
+  const { mode } = parentToChild;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -47,19 +47,19 @@ function Navigation({parentToChild, modeChange}: any) {
   }, []);
 
   const scrollToSection = (section: string) => {
-    console.log(section)
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else if (section === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+      console.error(`Element with id "${section}" not found`);
     }
   };
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
+      <p className="mobile-menu-top"><ListIcon />Menu</p>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -88,9 +88,9 @@ function Navigation({parentToChild, modeChange}: any) {
             <MenuIcon />
           </IconButton>
           {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
+            <LightModeIcon onClick={() => modeChange()} />
           ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
+            <DarkModeIcon onClick={() => modeChange()} />
           )}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (

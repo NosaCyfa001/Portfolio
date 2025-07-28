@@ -1,16 +1,18 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Footer.scss'
+import { Instagram, LinkedIn, X } from "@mui/icons-material";
 
 function Footer() {
   return (
     <footer>
       <div>
-        <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-        <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+        <a href="https://github.com/NosaCyfa001" target="_blank" rel="noreferrer"><GitHubIcon /></a>
+        <a href="https://www.instagram.com/cyfa001/" target="_blank" rel="noreferrer"><Instagram /></a>
+        <a href="https://x.com/UgoborNosa79144" target="_blank" rel="noreferrer"><X /></a>
+         <a href="https://www.linkedin.com/in/nosa-ugobor-b1a40327a/?trk=opento_sprofile_topcard" target="_blank" rel="noreferrer"><LinkedIn /></a>
       </div>
-      <p>A portfolio designed & built by <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Yuji Sato</a> with 💜</p>
+      <p>Copyright © 2025 Cyfatech Ltd, All Rights Reserved.</p>
     </footer>
   );
 }

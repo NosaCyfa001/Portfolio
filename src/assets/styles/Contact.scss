@@ -7,35 +7,61 @@
 .contact-form {
   padding-top: 20px;
 
+  // Ensure all elements are interactive
+  *,
+  *::before,
+  *::after {
+    pointer-events: auto;
+    box-sizing: border-box;
+  }
+
+  // Fix input and textarea styles
+  input,
+  textarea {
+    color: black !important;
+    background-color: white !important;
+  }
+
+  // Ensure MUI inputs are usable and visible
+  .MuiInputBase-input {
+    color: black !important;
+  }
+
+  fieldset {
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    pointer-events: auto !important;
+  }
+
+  // Style the submit button
   button {
     float: right;
     background-color: white;
     color: #050f0b;
+    transition: all 0.3s ease;
   }
 
   button:hover {
     background-color: #5000ca;
     color: white;
   }
-
-  fieldset {
-    background-color: white;
-  }
 }
 
+// Form label styling
 label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
 }
 
+// Form layout
 .form-flex {
   display: flex;
   gap: 15px;
   padding-bottom: 15px;
-}
 
-.form-flex .MuiFormControl-root {
-  width: 100%;
+  .MuiFormControl-root {
+    width: 100%;
+  }
 }
 
 form {
@@ -45,4 +71,10 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+input, textarea, .MuiTextField-root {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
 }
