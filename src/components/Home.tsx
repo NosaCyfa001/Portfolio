@@ -25,6 +25,7 @@ function Main() {
             <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon /></a>
             <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><Instagram /></a>
             <a href="https://x.com/UgoborNosa79144" target="_blank" rel="noreferrer"><X /></a>
+            <a href="https://www.linkedin.com/in/nosa-ugobor-b1a40327a/?trk=opento_sprofile_topcard" target="_blank" rel="noreferrer"><LinkedIn /></a>
           </div>
         </div>
       </div>

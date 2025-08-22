@@ -6,6 +6,7 @@ import dav from '../assets/images/dav.png';
 import Asa from '../assets/images/Asa.png';
 import vac from '../assets/images/vac.png';
 import net from '../assets/images/net.png';
+import cyfa from '../assets/images/cyfa.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -50,7 +51,11 @@ function Project() {
                     <a href="https://study-buddy-two-eta.vercel.app/" target="_blank" rel="noreferrer"><h2>StudyBuddy</h2></a>
                     <p> An online learning web application built with next.js containing courses, source codes, documentation etc which I called in using github's api.</p>
                 </div>
-
+                <div className="project">
+                    <a href="https://cyfa-tech-gadgets-and-accessories.vercel.app/" target="_blank" rel="noreferrer"><img src={cyfa} className="zoom" alt="thumbnail" width="100%" /></a>
+                    <a href="https://cyfa-tech-gadgets-and-accessories.vercel.app/" target="_blank" rel="noreferrer"><h2>Cyfa Tech Gadgets & Accessories</h2></a>
+                    <p>Cyfa Tech is a modern e-commerce web application built with Next.js, Tailwind CSS, and Stripe API integration. The platform showcases a wide range of gadgets and accessories, with features that provide a seamless shopping experience for users.</p>
+                </div>
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ function Footer() {
         <a href="https://x.com/UgoborNosa79144" target="_blank" rel="noreferrer"><X /></a>
          <a href="https://www.linkedin.com/in/nosa-ugobor-b1a40327a/?trk=opento_sprofile_topcard" target="_blank" rel="noreferrer"><LinkedIn /></a>
       </div>
-      <p>Copyright © 2025 Cyfatech Ltd, All Rights Reserved.</p>
+      <p>© 2025 Cyfa Tech. All rights reserved.</p>
     </footer>
   );
 }

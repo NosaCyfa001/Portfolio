@@ -29,11 +29,7 @@ function About() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faAndroid} size="3x" />
                         <h3>Web & Mobile Development</h3>
-                        <p>As someone that has passionately been doing this for a while, I've worked on variety of projects with a couple displayed on my github repo while others couldn't make it to production for some reasons but it all helped in terms of levelling up my problem solving skills.
-                            <br />
-                            <br />
-                               Am also experienced at designing unit tests to measure the effectiveness of software
-                            programs, back-end services & user interfaces.
+                        <p>I love turning ideas into functional, user-friendly apps. From personal experiments to projects on my GitHub, each one has sharpened my problem-solving skills. I also design unit tests to keep back-end services and user interfaces reliable and efficient.
                         </p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
